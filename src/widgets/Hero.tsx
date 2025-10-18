@@ -34,20 +34,53 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Slider Dots */}
-      <div className="absolute bottom-10 md:bottom-12 right-8 md:right-12 z-10 flex flex-col gap-3">
-        <button
-          className="w-3 h-3 rounded-full bg-white shadow-lg"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          className="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors duration-300 shadow-lg"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          className="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors duration-300 shadow-lg"
-          aria-label="Slide 3"
-        ></button>
+      {/* Social Media Icons */}
+      <div className="absolute bottom-8 md:bottom-14 right-[12%] md:right-[20%] z-10 flex flex-row gap-4">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg"
+          aria-label="YouTube"
+        >
+          <svg
+            className="w-5 h-5 text-white"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg"
+          aria-label="YouTube"
+        >
+          <svg
+            className="w-5 h-5 text-white"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-lg"
+          aria-label="YouTube"
+        >
+          <svg
+            className="w-5 h-5 text-white"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
       </div>
 
       {/* Scroll Indicator */}

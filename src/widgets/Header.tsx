@@ -39,7 +39,7 @@ const Header: React.FC = () => {
               <img
                 src="/mb-logo.svg"
                 alt="Mirra Bella Logo"
-                className="w-12 h-12 md:w-14 md:h-14 hover:opacity-80 transition-opacity duration-300"
+                className="w-14 h-14 md:w-16 md:h-16 hover:opacity-80 transition-opacity duration-300"
               />
             </a>
           </div>
@@ -137,7 +137,7 @@ const Header: React.FC = () => {
             <div className="relative ml-2">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="text-xl font-aboreto font-normal text-white transition-colors duration-300 flex items-center gap-2 hover:text-white/80"
+                className="text-xl font-aboreto font-normal text-white transition-colors duration-300 flex items-center gap-2 hover:text-white/80 lowercase"
               >
                 {i18n.language === "en" ? "en" : "ru"}
                 <svg
@@ -153,7 +153,7 @@ const Header: React.FC = () => {
                     onClick={() =>
                       changeLanguage(i18n.language === "en" ? "ru" : "en")
                     }
-                    className="w-[60px] h-[60px] bg-[#E8DCCF] rounded-[20px] text-xl font-aboreto font-normal text-primary-brown transition-colors duration-300 flex items-center justify-center hover:bg-[#d9cdbf]"
+                    className="w-[60px] h-[60px] bg-[#E8DCCF] rounded-[20px] text-xl font-aboreto font-normal text-primary-brown transition-colors duration-300 flex items-center justify-center hover:bg-[#d9cdbf] lowercase"
                   >
                     {i18n.language === "en" ? "ru" : "en"}
                   </button>
@@ -270,9 +270,9 @@ const Header: React.FC = () => {
                 onClick={() =>
                   changeLanguage(i18n.language === "en" ? "ru" : "en")
                 }
-                className="px-3 py-1.5 text-sm font-afacad font-normal text-white hover:text-primary-pink transition border border-white hover:border-primary-pink rounded"
+                className="px-3 py-1.5 text-sm font-afacad font-normal text-white hover:text-primary-pink transition border border-white hover:border-primary-pink rounded lowercase"
               >
-                {i18n.language === "en" ? "RU" : "EN"}
+                {i18n.language === "en" ? "ru" : "en"}
               </button>
               <button className="flex-1 px-4 py-2 bg-primary-pink text-white text-sm font-afacad font-normal rounded-full hover:bg-primary-pink/90 transition shadow-md uppercase">
                 {t("nav.bookService")}
