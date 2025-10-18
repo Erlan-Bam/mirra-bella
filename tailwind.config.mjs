@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Aboreto", "Afacad", "sans-serif"],
+        primary: ["Afacad", "sans-serif"],
         aboreto: ["Aboreto", "serif"],
         afacad: ["Afacad", "sans-serif"],
       },
@@ -18,6 +18,10 @@ export default {
       screens: {
         xxs: "320px",
         xs: "425px",
+      },
+      letterSpacing: {
+        wider: "0.05em",
+        widest: "0.15em",
       },
     },
   },

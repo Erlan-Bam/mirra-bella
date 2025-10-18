@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "О НАС",
+    "services": "УСЛУГИ",
+    "education": "ОБУЧЕНИЕ",
+    "shop": "МАГАЗИН",
+    "blog": "БЛОГ",
+    "contacts": "КОНТАКТЫ",
+    "bookService": "ЗАПИСАТЬСЯ",
+    "signIn": "ВОЙТИ",
+    "ourServices": "Наши услуги",
+    "healthCoach": "Коуч здоровья"
+  },
+  "hero": {
+    "title": "MIRRA BELLA",
+    "subtitle": "СТУДИЯ ЭСТЕТИКИ",
+    "location": "В ЛОС-АНДЖЕЛЕСЕ",
+    "description": "Сохраните естественную красоту вашей кожи в Beauty Studio Марии Яньковской",
+    "contactUs": "СВЯЗАТЬСЯ С НАМИ"
+  }
+}

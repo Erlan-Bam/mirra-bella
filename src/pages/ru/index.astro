@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../widgets/Header';
+import Hero from '../../widgets/Hero';
+import I18nProvider from '../../shared/ui/I18nProvider';
+---
+
+<Layout title="Mirra Bella - Студия эстетики в Лос-Анджелесе" lang="ru">
+	<I18nProvider client:load>
+		<Header client:load />
+		<Hero client:load />
+	</I18nProvider>
+</Layout>

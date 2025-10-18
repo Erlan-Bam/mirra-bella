@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "education": "EDUCATION",
+    "shop": "SHOP",
+    "blog": "BLOG",
+    "contacts": "CONTACTS",
+    "bookService": "BOOK A SERVICE",
+    "signIn": "SIGN IN",
+    "ourServices": "Our Services",
+    "healthCoach": "Health Coach"
+  },
+  "hero": {
+    "title": "MIRRA BELLA",
+    "subtitle": "ESTHETICIAN STUDIO",
+    "location": "IN LOS ANGELES",
+    "description": "Preserve the natural beauty of your skin at the Beauty Studio of Maria Iankovska",
+    "contactUs": "CONTACT US"
+  }
+}
