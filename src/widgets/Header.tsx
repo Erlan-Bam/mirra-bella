@@ -13,12 +13,14 @@ const Header: React.FC = () => {
       const currentPath = window.location.pathname;
       let newPath = "/";
 
+      // Remove both /ru and /en prefixes to get the clean path
+      const cleanPath = currentPath.replace(/^\/(ru|en)/, "") || "/";
+
       if (lang === "ru") {
-        newPath = currentPath.startsWith("/ru")
-          ? currentPath
-          : `/ru${currentPath === "/" ? "" : currentPath}`;
+        newPath = cleanPath === "/" ? "/ru" : `/ru${cleanPath}`;
       } else {
-        newPath = currentPath.replace(/^\/ru/, "") || "/";
+        // For English, we can use /en prefix or just root
+        newPath = cleanPath === "/" ? "/" : `/en${cleanPath}`;
       }
 
       window.location.href = newPath;
@@ -28,7 +30,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
-      <nav className="container mx-auto px-6 lg:px-12 xl:px-16 py-5 md:py-6">
+      <nav className="container mx-auto px-6 lg:px-12 xl:px-16 py-6 md:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -195,17 +197,17 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 space-y-3 border-t border-white/20 pt-4 animate-fadeIn bg-black/80 backdrop-blur-md rounded-lg px-4 -mx-4">
+          <div className="lg:hidden mt-6 pb-6 space-y-4 border-t border-white/20 pt-6 animate-fadeIn bg-black/80 backdrop-blur-md rounded-lg px-6 -mx-4">
             <a
               href="#about"
-              className="block text-sm font-afacad font-normal text-white hover:text-primary-pink transition"
+              className="block text-sm font-aboreto font-normal text-white hover:text-primary-pink transition uppercase tracking-[0.08em]"
             >
               {t("nav.about")}
             </a>
             <div>
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="w-full flex items-center justify-between text-sm font-afacad font-normal text-white hover:text-primary-pink transition"
+                className="w-full flex items-center justify-between text-sm font-aboreto font-normal text-white hover:text-primary-pink transition uppercase tracking-[0.08em]"
               >
                 {t("nav.services")}
                 <svg
@@ -225,16 +227,16 @@ const Header: React.FC = () => {
                 </svg>
               </button>
               {isServicesOpen && (
-                <div className="mt-2 ml-4 space-y-2">
+                <div className="mt-3 ml-4 space-y-3">
                   <a
                     href="#services"
-                    className="block text-sm text-white/80 hover:text-primary-pink"
+                    className="block text-sm font-afacad text-white/80 hover:text-primary-pink transition"
                   >
                     {t("nav.ourServices")}
                   </a>
                   <a
                     href="#health-coach"
-                    className="block text-sm text-white/80 hover:text-primary-pink"
+                    className="block text-sm font-afacad text-white/80 hover:text-primary-pink transition"
                   >
                     {t("nav.healthCoach")}
                   </a>
@@ -243,41 +245,47 @@ const Header: React.FC = () => {
             </div>
             <a
               href="#education"
-              className="block text-sm font-afacad font-normal text-white hover:text-primary-pink transition"
+              className="block text-sm font-aboreto font-normal text-white hover:text-primary-pink transition uppercase tracking-[0.08em]"
             >
               {t("nav.education")}
             </a>
             <a
               href="#shop"
-              className="block text-sm font-afacad font-normal text-white hover:text-primary-pink transition"
+              className="block text-sm font-aboreto font-normal text-white hover:text-primary-pink transition uppercase tracking-[0.08em]"
             >
               {t("nav.shop")}
             </a>
             <a
               href="#blog"
-              className="block text-sm font-afacad font-normal text-white hover:text-primary-pink transition"
+              className="block text-sm font-aboreto font-normal text-white hover:text-primary-pink transition uppercase tracking-[0.08em]"
             >
               {t("nav.blog")}
             </a>
             <a
               href="#contacts"
-              className="block text-sm font-afacad font-normal text-white hover:text-primary-pink transition"
+              className="block text-sm font-aboreto font-normal text-white hover:text-primary-pink transition uppercase tracking-[0.08em]"
             >
               {t("nav.contacts")}
             </a>
-            <div className="flex items-center gap-2 pt-3">
-              <button
-                onClick={() =>
-                  changeLanguage(i18n.language === "en" ? "ru" : "en")
-                }
-                className="px-3 py-1.5 text-sm font-afacad font-normal text-white hover:text-primary-pink transition border border-white hover:border-primary-pink rounded lowercase"
-              >
-                {i18n.language === "en" ? "ru" : "en"}
-              </button>
-              <button className="flex-1 px-4 py-2 bg-primary-pink text-white text-sm font-afacad font-normal rounded-full hover:bg-primary-pink/90 transition shadow-md uppercase">
+
+            {/* Action Buttons */}
+            <div className="space-y-3 pt-6 border-t border-white/10 mt-2">
+              {/* Language Selector - Elegant Design */}
+              <div className="flex justify-center">
+                <button
+                  onClick={() =>
+                    changeLanguage(i18n.language === "en" ? "ru" : "en")
+                  }
+                  className="px-6 py-2 bg-[#E8DCCF] text-primary-brown text-base font-aboreto font-normal rounded-[15px] transition-all duration-300 hover:bg-[#d9cdbf] hover:shadow-md lowercase min-w-[80px] shadow-sm"
+                >
+                  {i18n.language === "en" ? "ru" : "en"}
+                </button>
+              </div>
+
+              <button className="w-full px-10 py-3.5 bg-primary-pink text-white text-sm font-afacad font-normal rounded-full hover:bg-primary-pink/90 transition-all duration-300 shadow-lg uppercase tracking-[0.12em]">
                 {t("nav.bookService")}
               </button>
-              <button className="flex-1 px-4 py-2 border border-white text-white text-sm font-afacad font-normal rounded-full hover:bg-white hover:text-primary-brown transition uppercase">
+              <button className="w-full px-10 py-3.5 bg-white/5 border border-white/60 text-white text-sm font-afacad font-normal rounded-full hover:bg-white hover:text-primary-brown transition-all duration-300 backdrop-blur-md uppercase tracking-[0.12em] shadow-sm">
                 {t("nav.signIn")}
               </button>
             </div>

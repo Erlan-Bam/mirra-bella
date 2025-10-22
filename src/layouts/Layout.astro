@@ -1,5 +1,6 @@
 ---
 import '../app/global.css';
+import Loading from '../widgets/Loading';
 
 interface Props {
 	title?: string;
@@ -22,6 +23,7 @@ const { title = 'Mirra Bella - Esthetician Studio', lang = 'en' } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="font-afacad">
+		<Loading client:load />
 		<slot />
 	</body>
 </html>
