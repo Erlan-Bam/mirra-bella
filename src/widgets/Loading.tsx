@@ -80,8 +80,9 @@ const Loading: React.FC<LoadingProps> = ({ onComplete }) => {
               src="/mb-logo.svg"
               alt="Mirra Bella Logo"
               className="w-full h-full object-contain animate-spin-slow"
-              style={{ 
-                filter: "brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%)"
+              style={{
+                filter:
+                  "brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%)",
               }}
             />
           </div>
@@ -93,9 +94,11 @@ const Loading: React.FC<LoadingProps> = ({ onComplete }) => {
                 src="/mb-logo.svg"
                 alt="Pink ring"
                 className="w-full h-full object-contain animate-spin-slow"
-                style={{ 
-                  filter: "brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(1247%) hue-rotate(305deg) brightness(93%) contrast(86%)",
-                  clipPath: "polygon(0% 0%, 60% 0%, 60% 60%, 40% 60%, 40% 40%, 0% 40%)"
+                style={{
+                  filter:
+                    "brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(1247%) hue-rotate(305deg) brightness(93%) contrast(86%)",
+                  clipPath:
+                    "polygon(0% 0%, 60% 0%, 60% 60%, 40% 60%, 40% 40%, 0% 40%)",
                 }}
               />
             </div>
@@ -108,9 +111,11 @@ const Loading: React.FC<LoadingProps> = ({ onComplete }) => {
                 src="/mb-logo.svg"
                 alt="Yellow ring"
                 className="w-full h-full object-contain animate-spin-slow"
-                style={{ 
-                  filter: "brightness(0) saturate(100%) invert(74%) sepia(72%) saturate(453%) hue-rotate(358deg) brightness(99%) contrast(91%)",
-                  clipPath: "polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%, 60% 60%, 40% 60%)"
+                style={{
+                  filter:
+                    "brightness(0) saturate(100%) invert(74%) sepia(72%) saturate(453%) hue-rotate(358deg) brightness(99%) contrast(91%)",
+                  clipPath:
+                    "polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%, 60% 60%, 40% 60%)",
                 }}
               />
             </div>
@@ -123,9 +128,11 @@ const Loading: React.FC<LoadingProps> = ({ onComplete }) => {
                 src="/mb-logo.svg"
                 alt="Teal ring"
                 className="w-full h-full object-contain animate-spin-slow"
-                style={{ 
-                  filter: "brightness(0) saturate(100%) invert(63%) sepia(13%) saturate(754%) hue-rotate(123deg) brightness(91%) contrast(88%)",
-                  clipPath: "polygon(0% 40%, 40% 40%, 40% 60%, 60% 60%, 60% 100%, 0% 100%)"
+                style={{
+                  filter:
+                    "brightness(0) saturate(100%) invert(63%) sepia(13%) saturate(754%) hue-rotate(123deg) brightness(91%) contrast(88%)",
+                  clipPath:
+                    "polygon(0% 40%, 40% 40%, 40% 60%, 60% 60%, 60% 100%, 0% 100%)",
                 }}
               />
             </div>
@@ -138,9 +145,10 @@ const Loading: React.FC<LoadingProps> = ({ onComplete }) => {
                 src="/mb-logo.svg"
                 alt="Blue ring"
                 className="w-full h-full object-contain animate-spin-slow"
-                style={{ 
-                  filter: "brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(1059%) hue-rotate(168deg) brightness(91%) contrast(88%)",
-                  clipPath: "circle(22% at 50% 50%)"
+                style={{
+                  filter:
+                    "brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(1059%) hue-rotate(168deg) brightness(91%) contrast(88%)",
+                  clipPath: "circle(22% at 50% 50%)",
                 }}
               />
             </div>
@@ -153,9 +161,10 @@ const Loading: React.FC<LoadingProps> = ({ onComplete }) => {
                 src="/mb-logo.svg"
                 alt="Purple ring"
                 className="w-full h-full object-contain animate-spin-slow"
-                style={{ 
-                  filter: "brightness(0) saturate(100%) invert(71%) sepia(8%) saturate(1076%) hue-rotate(213deg) brightness(92%) contrast(86%)",
-                  clipPath: "circle(15% at 50% 50%)"
+                style={{
+                  filter:
+                    "brightness(0) saturate(100%) invert(71%) sepia(8%) saturate(1076%) hue-rotate(213deg) brightness(92%) contrast(86%)",
+                  clipPath: "circle(15% at 50% 50%)",
                 }}
               />
             </div>
