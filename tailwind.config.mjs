@@ -7,6 +7,8 @@ export default {
         primary: ["Afacad", "sans-serif"],
         aboreto: ["Aboreto", "serif"],
         afacad: ["Afacad", "sans-serif"],
+        avenir: ["Avenir", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        "bv-celine": ["BV Celine", "serif"],
       },
       colors: {
         primary: {

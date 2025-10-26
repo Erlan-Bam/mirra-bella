@@ -1,12 +1,35 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir.ttc") format("truetype-collection");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BV Celine";
+  src: url("/fonts/BV Celine/BV Celine Regular/BV Celine Regular.woff2")
+      format("woff2"),
+    url("/fonts/BV Celine/BV Celine Regular/BV Celine Regular.woff")
+      format("woff"),
+    url("/fonts/BV Celine/BV Celine Regular/BV Celine Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --breakpoint-xxs: 320px;
   --breakpoint-xs: 425px;
   --font-primary: Afacad, sans-serif;
   --font-aboreto: Aboreto, serif;
   --font-afacad: Afacad, sans-serif;
+  --font-avenir: Avenir, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-bv-celine: "BV Celine", serif;
   --color-primary-white: #ffffff;
   --color-primary-pink: #c57e81;
   --color-primary-brown: #5f5b52;
