@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 951">
+<foreignObject x="-105.5" y="-105.5" width="239" height="239"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(52.75px);clip-path:url(#bgblur_0_38_3645_clip_path);height:100%;width:100%"></div></foreignObject><circle id="Ellipse 156" data-figma-bg-blur-radius="105.5" cx="14" cy="14" r="14" fill="var(--fill-0, white)" fill-opacity="0.3"/>
+<path id="Subtract" d="M13.9925 9.13061C13.9925 9.13061 18.5547 9.13046 19.6888 9.44311C19.9984 9.52787 20.2813 9.69316 20.5081 9.9226C20.7349 10.152 20.8979 10.4377 20.9818 10.7507C21.4642 12.7151 21.3532 15.818 20.9915 17.8581C20.9077 18.1713 20.7437 18.4568 20.5169 18.6863C20.2901 18.9156 20.0081 19.081 19.6985 19.1658C18.5703 19.477 14.0449 19.4783 14.0023 19.4783C14.0023 19.4783 9.44041 19.4783 8.30597 19.1658C7.99631 19.081 7.71347 18.9157 7.48663 18.6863C7.25985 18.4569 7.09681 18.1713 7.013 17.8581C6.52765 15.9023 6.66032 12.7978 7.00323 10.7605C7.087 10.4474 7.25015 10.1618 7.47687 9.93236C7.70371 9.70292 7.98653 9.53764 8.2962 9.45287C9.42617 9.14125 13.9615 9.13067 13.9925 9.13061ZM12.7825 16.4343L16.4349 14.3044L12.7825 12.1736V16.4343Z" fill="var(--fill-0, white)"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_38_3645_clip_path" transform="translate(105.5 105.5)"><circle cx="14" cy="14" r="14"/>
+</clipPath></defs>
+</svg>

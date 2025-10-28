@@ -3,15 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../widgets/Header';
 import Hero from '../widgets/Hero';
 import I18nProvider from '../shared/ui/I18nProvider';
-import SlideShow from '@widgets/SlideShow';
 ---
 
 <Layout title="Mirra Bella - Esthetician Studio in Los Angeles" lang="en">
 	<I18nProvider client:load>
-		<div class="pc">
-			<Header client:load />
-			<Hero client:load />
-			<SlideShow client:load />
-		</div>
+		<Header client:load />
+		<Hero client:load />
 	</I18nProvider>
 </Layout>

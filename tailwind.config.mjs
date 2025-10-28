@@ -4,9 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Afacad", "sans-serif"],
-        aboreto: ["Aboreto", "serif"],
-        afacad: ["Afacad", "sans-serif"],
+        primary: ["BV Celine", "serif"],
         avenir: ["Avenir", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
         "bv-celine": ["BV Celine", "serif"],
       },

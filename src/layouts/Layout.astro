@@ -1,6 +1,5 @@
 ---
 import '../app/global.css';
-import Loading from '../widgets/Loading';
 
 interface Props {
 	title?: string;
@@ -17,12 +16,9 @@ const { title = 'Mirra Bella - Esthetician Studio', lang = 'en' } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<title>{title}</title>
 	</head>
-	<body class="font-afacad">
+	<body class="font-bv-celine">
 		<!-- <Loading client:load /> -->
 		<slot />
 	</body>
