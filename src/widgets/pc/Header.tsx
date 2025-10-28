@@ -30,11 +30,11 @@ export default function Header() {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 px-[15.52%] pt-[5.73%]">
+    <header className="absolute top-0 left-0 right-0 z-50 px-[15.52%] pt-[2.5%] md:pt-[2.7%] lg:pt-[4.5%] xl:pt-[4.73%] 2xl:pt-[4.73%]">
       {/* Header Container */}
       <div className="flex items-center justify-between gap-[2.6%]">
-        {/* Logo - Made larger (64px / 1920px = 3.33vw) */}
-        <div className="w-[3.33vw] flex-shrink-0">
+        {/* Logo - Responsive sizing */}
+        <div className="w-[2.5vw] md:w-[2.8vw] lg:w-[3vw] xl:w-[3.2vw] 2xl:w-[3.33vw] flex-shrink-0">
           <img
             src="/images/logo.png"
             alt="Mirra Bella Logo"
@@ -43,7 +43,7 @@ export default function Header() {
         </div>
 
         {/* Navigation Menu - All BV Celine, 16px text */}
-        <nav className="flex items-center gap-[2.6vw] font-bv-celine text-[0.83vw] text-white uppercase tracking-normal flex-1 justify-center">
+        <nav className="flex items-center gap-[2.6vw] font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase tracking-normal flex-1 justify-center">
           <a
             href={currentLang === "en" ? "/en" : "/ru"}
             className="hover:opacity-80 transition-opacity whitespace-nowrap"
@@ -68,7 +68,7 @@ export default function Header() {
               />
             </button>
             {isServicesDropdownOpen && (
-              <div className="absolute top-[2.08vw] left-0 bg-white/67 backdrop-blur-sm rounded-[0.21vw] px-[0.57vw] py-[0.52vw] min-w-[4.79vw] text-[0.83vw] text-[#595959] font-bv-celine normal-case z-50">
+              <div className="absolute top-[2.08vw] left-0 bg-white/67 backdrop-blur-sm rounded-[0.21vw] px-[0.57vw] py-[0.52vw] min-w-[4.79vw] text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-[#595959] font-bv-celine normal-case z-50">
                 <div className="whitespace-nowrap">{t("nav.ourServices")}</div>
                 <div className="whitespace-nowrap mt-[0.1vw]">
                   {t("nav.healthCoach")}
@@ -105,28 +105,27 @@ export default function Header() {
 
         {/* Header Actions - Aligned properly */}
         <div className="flex items-center gap-[3.23vw] flex-shrink-0">
-          {/* Book a Service Button - Blurred background with gradient */}
-          <button className="relative w-[10.99vw] h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#D4A5A7] to-[#C57E81] opacity-80 rounded-[1.56vw]" />
-            <div className="absolute inset-0 backdrop-blur-[1.93vw] rounded-[1.56vw]" />
+          {/* Book a Service Button - Pink gradient with blur like Figma */}
+          <button className="relative w-[10.99vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden rounded-[1.56vw]">
+            <div className="absolute inset-0 bg-[#c57e81] backdrop-blur-[1.93vw]" />
             <span className="relative z-10">{t("nav.bookService")}</span>
           </button>
 
-          {/* Sign In Button - Blurred background only */}
-          <button className="relative w-[5.21vw] h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden">
-            <div className="absolute inset-0 backdrop-blur-[1.93vw] bg-white/10 rounded-[1.56vw]" />
+          {/* Sign In Button - Only blur with subtle background like Figma */}
+          <button className="relative w-[5.21vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden rounded-[1.56vw]">
+            <div className="absolute inset-0 bg-[rgba(217,217,217,0.16)] backdrop-blur-[1.93vw]" />
             <span className="relative z-10">{t("nav.signIn")}</span>
           </button>
 
           {/* Language Switcher - Aligned with buttons */}
           <div
-            className="relative w-[1.93vw] h-[2.08vw] flex items-center justify-center"
+            className="relative w-[1.93vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center"
             onMouseEnter={() => setIsLangDropdownOpen(true)}
             onMouseLeave={() => setIsLangDropdownOpen(false)}
           >
             {/* Current Language */}
             <button className="w-full h-full flex flex-col items-center justify-center gap-[0.47vw]">
-              <span className="font-avenir text-[0.83vw] text-white leading-none">
+              <span className="font-avenir text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white leading-none">
                 {currentLang}
               </span>
               <span className="w-0 h-0 border-l-[0.26vw] border-r-[0.26vw] border-t-[0.47vw] border-l-transparent border-r-transparent border-t-white" />
@@ -137,7 +136,7 @@ export default function Header() {
               <div className="absolute top-[1.56vw] left-[-0.26vw] w-[2.08vw] bg-white/67 backdrop-blur-sm rounded-[0.21vw] pt-[0.62vw] pb-[0.31vw] z-50">
                 <button
                   onClick={() => changeLanguage(otherLang)}
-                  className="w-full text-center font-avenir text-[0.83vw] text-[#595959] hover:text-[#333] transition-colors leading-none"
+                  className="w-full text-center font-avenir text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-[#595959] hover:text-[#333] transition-colors leading-none"
                 >
                   {otherLang}
                 </button>
