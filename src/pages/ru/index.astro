@@ -1,13 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../widgets/Header';
-import Hero from '../../widgets/Hero';
-import I18nProvider from '../../shared/ui/I18nProvider';
+import Header from '../../widgets/Header.tsx';
+import Hero from '../../widgets/Hero.tsx';
+import LogoAnimation from '../../widgets/LogoAnimation.tsx';
+import I18nProvider from '../../shared/ui/I18nProvider.tsx';
 ---
 
 <Layout title="Mirra Bella - Студия эстетики в Лос-Анджелесе" lang="ru">
 	<I18nProvider client:load>
 		<Header client:load />
 		<Hero client:load />
+		<LogoAnimation client:load />
 	</I18nProvider>
 </Layout>

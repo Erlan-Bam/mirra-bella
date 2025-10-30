@@ -105,26 +105,24 @@ export default function Header() {
 
         {/* Header Actions - Aligned properly */}
         <div className="flex items-center gap-[3.23vw] flex-shrink-0">
-          {/* Book a Service Button - Pink gradient with blur like Figma */}
-          <button className="relative w-[10.99vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden rounded-[1.56vw]">
-            <div className="absolute inset-0 bg-[#c57e81] backdrop-blur-[1.93vw]" />
+          {/* Book a Service Button - Transparent with blur like Figma */}
+          <button className="relative w-[10.99vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden rounded-[1.56vw] backdrop-blur-[1.93vw] backdrop-filter bg-[rgba(197,126,129,0.3)]">
             <span className="relative z-10">{t("nav.bookService")}</span>
           </button>
 
-          {/* Sign In Button - Only blur with subtle background like Figma */}
-          <button className="relative w-[5.21vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden rounded-[1.56vw]">
-            <div className="absolute inset-0 bg-[rgba(217,217,217,0.16)] backdrop-blur-[1.93vw]" />
+          {/* Sign In Button - Transparent with blur like Figma */}
+          <button className="relative w-[5.21vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center font-bv-celine text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white uppercase hover:opacity-90 transition-opacity whitespace-nowrap overflow-hidden rounded-[1.56vw] backdrop-blur-[1.93vw] backdrop-filter bg-[rgba(217,217,217,0.16)]">
             <span className="relative z-10">{t("nav.signIn")}</span>
           </button>
 
-          {/* Language Switcher - Aligned with buttons */}
+          {/* Language Switcher - Arrow on same line as language */}
           <div
             className="relative w-[1.93vw] h-[1.7vw] md:h-[1.85vw] lg:h-[1.95vw] xl:h-[2.05vw] 2xl:h-[2.08vw] flex items-center justify-center"
             onMouseEnter={() => setIsLangDropdownOpen(true)}
             onMouseLeave={() => setIsLangDropdownOpen(false)}
           >
-            {/* Current Language */}
-            <button className="w-full h-full flex flex-col items-center justify-center gap-[0.47vw]">
+            {/* Current Language with arrow on same line */}
+            <button className="w-full h-full flex items-center justify-center gap-[0.26vw]">
               <span className="font-avenir text-[0.7vw] md:text-[0.75vw] lg:text-[0.78vw] xl:text-[0.81vw] 2xl:text-[0.83vw] text-white leading-none">
                 {currentLang}
               </span>

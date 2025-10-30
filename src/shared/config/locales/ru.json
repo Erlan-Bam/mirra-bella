@@ -17,5 +17,17 @@
     "location": "В ЛОС-АНДЖЕЛЕСЕ",
     "description": "Сохраните естественную красоту вашей кожи в Beauty Studio Марии Яньковской",
     "contactUs": "СВЯЗАТЬСЯ С НАМИ"
+  },
+  "logoAnimation": {
+    "mirrorOfBeautyName": "ЗЕРКАЛО КРАСОТЫ",
+    "mirrorOfBeauty": "салон красоты, где лучшие косметологи-эстетисты заботятся о вашей коже",
+    "instituteOfAestheticsName": "ИНСТИТУТ ЭСТЕТИКИ",
+    "instituteOfAesthetics": "институт эстетики для освоения профессии или последипломного обучения",
+    "mirrorOfHealthName": "ЗЕРКАЛО ЗДОРОВЬЯ",
+    "mirrorOfHealth": "консультации и коучинг с холистическим подходом к здоровью",
+    "beautyInDropName": "КРАСОТА В КАПЛЕ",
+    "beautyInDrop": "магазин косметики для красоты вашей кожи",
+    "mirrorOfRealityName": "ЗЕРКАЛО РЕАЛЬНОСТИ",
+    "mirrorOfReality": "приобретение оборудования для профессионалов"
   }
 }

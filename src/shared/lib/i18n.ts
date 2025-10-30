@@ -26,6 +26,21 @@ const resources = {
           "Preserve the natural beauty of your skin at the Beauty Studio of Maria Iankovska",
         contactUs: "CONTACT US",
       },
+      logoAnimation: {
+        mirrorOfBeautyName: "MIRROR OF BEAUTY",
+        mirrorOfBeauty:
+          "beauty salon, where the best estheticians take care of your skin",
+        instituteOfAestheticsName: "INSTITUTE OF AESTHETICS",
+        instituteOfAesthetics:
+          "institute of aesthetics for mastering the profession or postgraduate education",
+        mirrorOfHealthName: "MIRROR OF HEALTH",
+        mirrorOfHealth:
+          "consultations and coaching with a holistic approach to health",
+        beautyInDropName: "BEAUTY IN DROP",
+        beautyInDrop: "cosmetics store for the beauty of your skin",
+        mirrorOfRealityName: "MIRROR OF REALITY",
+        mirrorOfReality: "acquisition of equipment for professionals",
+      },
     },
   },
   ru: {
@@ -49,6 +64,21 @@ const resources = {
         description:
           "Сохраните естественную красоту вашей кожи в Beauty Studio Марии Яньковской",
         contactUs: "СВЯЗАТЬСЯ С НАМИ",
+      },
+      logoAnimation: {
+        mirrorOfBeautyName: "ЗЕРКАЛО КРАСОТЫ",
+        mirrorOfBeauty:
+          "салон красоты, где лучшие косметологи-эстетисты заботятся о вашей коже",
+        instituteOfAestheticsName: "ИНСТИТУТ ЭСТЕТИКИ",
+        instituteOfAesthetics:
+          "институт эстетики для освоения профессии или последипломного обучения",
+        mirrorOfHealthName: "ЗЕРКАЛО ЗДОРОВЬЯ",
+        mirrorOfHealth:
+          "консультации и коучинг с холистическим подходом к здоровью",
+        beautyInDropName: "КРАСОТА В КАПЛЕ",
+        beautyInDrop: "магазин косметики для красоты вашей кожи",
+        mirrorOfRealityName: "ЗЕРКАЛО РЕАЛЬНОСТИ",
+        mirrorOfReality: "приобретение оборудования для профессионалов",
       },
     },
   },

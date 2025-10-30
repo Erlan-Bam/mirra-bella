@@ -17,5 +17,17 @@
     "location": "IN LOS ANGELES",
     "description": "Preserve the natural beauty of your skin at the Beauty Studio of Maria Iankovska",
     "contactUs": "CONTACT US"
+  },
+  "logoAnimation": {
+    "mirrorOfBeautyName": "MIRROR OF BEAUTY",
+    "mirrorOfBeauty": "beauty salon, where the best estheticians take care of your skin",
+    "instituteOfAestheticsName": "INSTITUTE OF AESTHETICS",
+    "instituteOfAesthetics": "institute of aesthetics for mastering the profession or postgraduate education",
+    "mirrorOfHealthName": "MIRROR OF HEALTH",
+    "mirrorOfHealth": "consultations and coaching with a holistic approach to health",
+    "beautyInDropName": "BEAUTY IN DROP",
+    "beautyInDrop": "cosmetics store for the beauty of your skin",
+    "mirrorOfRealityName": "MIRROR OF REALITY",
+    "mirrorOfReality": "acquisition of equipment for professionals"
   }
 }
