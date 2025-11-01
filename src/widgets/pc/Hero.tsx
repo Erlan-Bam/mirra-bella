@@ -19,10 +19,10 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-between px-[15.52%] pt-[18.75%] pb-[5.73%]">
+      <div className="relative z-10 h-full flex flex-col justify-between px-[15.52%] pt-[16%] md:pt-[17%] lg:pt-[18%] xl:pt-[18.5%] 2xl:pt-[18.75%] pb-[5%] md:pb-[5.2%] lg:pb-[5.4%] xl:pb-[5.6%] 2xl:pb-[5.73%]">
         <div>
           {/* Main Title */}
-          <h1 className="font-bv-celine text-[3.33vw] leading-[1.15] text-white uppercase mb-[3.13vw]">
+          <h1 className="font-bv-celine text-[2.8vw] md:text-[3vw] lg:text-[3.15vw] xl:text-[3.25vw] 2xl:text-[3.33vw] leading-[1.15] text-white uppercase mb-[2.5vw] md:mb-[2.7vw] lg:mb-[2.9vw] xl:mb-[3vw] 2xl:mb-[3.13vw]">
             {t("hero.title")}
             <br />
             {t("hero.subtitle")}
@@ -31,27 +31,27 @@ export default function Hero() {
           </h1>
 
           {/* Description */}
-          <p className="text-[1.2vw] leading-[1.43] text-white max-w-[31vw] mb-[3.65vw] tracking-[0.012em]">
+          <p className="text-[1vw] md:text-[1.05vw] lg:text-[1.12vw] xl:text-[1.17vw] 2xl:text-[1.2vw] leading-[1.43] text-white max-w-[31vw] mb-[3vw] md:mb-[3.2vw] lg:mb-[3.4vw] xl:mb-[3.5vw] 2xl:mb-[3.65vw] tracking-[0.012em]">
             <span className="font-avenir">{t("hero.description")}</span>
           </p>
 
           {/* Contact Button */}
-          <button className="relative w-[11.46vw] h-[2.86vw] flex items-center justify-center font-bv-celine text-[1.04vw] text-white uppercase hover:opacity-90 transition-opacity">
+          <button className="relative w-[10vw] md:w-[10.5vw] lg:w-[11vw] xl:w-[11.25vw] 2xl:w-[11.46vw] h-[2.4vw] md:h-[2.55vw] lg:h-[2.7vw] xl:h-[2.8vw] 2xl:h-[2.86vw] flex items-center justify-center font-bv-celine text-[0.9vw] md:text-[0.95vw] lg:text-[0.99vw] xl:text-[1.02vw] 2xl:text-[1.04vw] text-white uppercase hover:opacity-90 transition-opacity">
             <div className="absolute inset-0 bg-[#c57e81] rounded-[1.56vw] backdrop-blur-[1.93vw]" />
             <span className="relative z-10">{t("hero.contactUs")}</span>
           </button>
         </div>
 
         {/* Social Media Icons - Bottom Right */}
-        <div className="absolute right-[7.92%] bottom-[5.21%] z-20 flex gap-[0.94vw]">
+        <div className="absolute right-[10%] md:right-[9%] lg:right-[8.5%] xl:right-[8.2%] 2xl:right-[7.92%] bottom-[6%] md:bottom-[5.5%] lg:bottom-[5.2%] xl:bottom-[5.1%] 2xl:bottom-[5.21%] z-20 flex gap-[0.8vw] md:gap-[0.85vw] lg:gap-[0.89vw] xl:gap-[0.92vw] 2xl:gap-[0.94vw]">
           {/* YouTube */}
           <a
             href="#"
-            className="w-[1.46vw] h-[1.46vw] rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+            className="w-[1.25vw] md:w-[1.32vw] lg:w-[1.38vw] xl:w-[1.43vw] 2xl:w-[1.46vw] h-[1.25vw] md:h-[1.32vw] lg:h-[1.38vw] xl:h-[1.43vw] 2xl:h-[1.46vw] rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="YouTube"
           >
             <svg
-              className="w-[0.73vw] h-[0.73vw]"
+              className="w-[0.62vw] md:w-[0.66vw] lg:w-[0.69vw] xl:w-[0.71vw] 2xl:w-[0.73vw] h-[0.62vw] md:h-[0.66vw] lg:h-[0.69vw] xl:h-[0.71vw] 2xl:h-[0.73vw]"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -62,11 +62,11 @@ export default function Hero() {
           {/* Instagram */}
           <a
             href="#"
-            className="w-[1.46vw] h-[1.46vw] rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+            className="w-[1.25vw] md:w-[1.32vw] lg:w-[1.38vw] xl:w-[1.43vw] 2xl:w-[1.46vw] h-[1.25vw] md:h-[1.32vw] lg:h-[1.38vw] xl:h-[1.43vw] 2xl:h-[1.46vw] rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="Instagram"
           >
             <svg
-              className="w-[0.73vw] h-[0.73vw]"
+              className="w-[0.62vw] md:w-[0.66vw] lg:w-[0.69vw] xl:w-[0.71vw] 2xl:w-[0.73vw] h-[0.62vw] md:h-[0.66vw] lg:h-[0.69vw] xl:h-[0.71vw] 2xl:h-[0.73vw]"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -77,11 +77,11 @@ export default function Hero() {
           {/* Facebook */}
           <a
             href="#"
-            className="w-[1.46vw] h-[1.46vw] rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+            className="w-[1.25vw] md:w-[1.32vw] lg:w-[1.38vw] xl:w-[1.43vw] 2xl:w-[1.46vw] h-[1.25vw] md:h-[1.32vw] lg:h-[1.38vw] xl:h-[1.43vw] 2xl:h-[1.46vw] rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="Facebook"
           >
             <svg
-              className="w-[0.73vw] h-[0.73vw]"
+              className="w-[0.62vw] md:w-[0.66vw] lg:w-[0.69vw] xl:w-[0.71vw] 2xl:w-[0.73vw] h-[0.62vw] md:h-[0.66vw] lg:h-[0.69vw] xl:h-[0.71vw] 2xl:h-[0.73vw]"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
